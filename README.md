@@ -12,18 +12,19 @@ To run this app on your local machine, please follow these simple steps:
 
 - Expo CLI: If you haven't already, install the Expo CLI globally using npm:
 
-  ```bash
+  ```
   npm install -g expo-cli
   ```
   
 ### Navigate to the project directory:
 
-  ```bash
+  ```
   cd Incredible_To_Do_List
   ```
 
-- Install the project's dependencies using npm:
+### Install the project's dependencies using npm:
 
-```bash
+```
 npm install
 ```
+
