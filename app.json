@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "Incredible_To_Do_List",
+    "slug": "Incredible_To_Do_List",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "Incredible_To_Do_List"
+}
