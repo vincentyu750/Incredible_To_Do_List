@@ -28,7 +28,7 @@ To run this app on your local machine, please follow these simple steps:
   npm install
   ```
 
-### Running the App
+## Running the App
 
   ```
   expo start
