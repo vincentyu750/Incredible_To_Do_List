@@ -28,7 +28,7 @@ Expo CLI: If you haven't already, install the Expo CLI globally using npm:
   npm install
   ```
 
-## Running the App
+### Running the App
 
   ```
   expo start
