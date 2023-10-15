@@ -24,7 +24,12 @@ To run this app on your local machine, please follow these simple steps:
 
 ### Install the project's dependencies using npm:
 
-```
-npm install
-```
+  ```
+  npm install
+  ```
 
+### Running the App
+
+  ```
+  expo start
+  ```
