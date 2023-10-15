@@ -8,9 +8,9 @@ To run this app on your local machine, please follow these simple steps:
 
 ### Prerequisites
 
-- Node.js: Make sure you have Node.js installed on your computer. You can download it from [https://nodejs.org/](https://nodejs.org/).
+Node.js: Make sure you have Node.js installed on your computer. You can download it from [https://nodejs.org/](https://nodejs.org/).
 
-- Expo CLI: If you haven't already, install the Expo CLI globally using npm:
+Expo CLI: If you haven't already, install the Expo CLI globally using npm:
 
   ```
   npm install -g expo-cli
