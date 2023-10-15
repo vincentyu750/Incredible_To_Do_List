@@ -17,12 +17,15 @@ To run this app on your local machine, please follow these simple steps:
   
 Navigate to the project directory:
 
-cd Incredible_To_Do_List
+  ```bash
+  cd Incredible_To_Do_List
 
 Install the project's dependencies using npm:
 
+```bash
 npm install
 
 ## Running the App 
 
+```bash
 expo start
