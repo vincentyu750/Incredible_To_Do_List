@@ -8,12 +8,12 @@ function App() {
   const [tasks, setTasks] = useState([
     'Do laundry',
     'Go to gym',
-    'Walk dog'
+    'Walk dog',
   ]);
 
   // Function to add new tasks
-  const addTask = (newTask) => {
-    setTasks([...tasks, newTask]);
+  const addTask = (taskText) => {
+    setTasks([...tasks, taskText]);
   };
 
   return (
