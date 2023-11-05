@@ -1,14 +1,20 @@
 import React, { useState } from 'react';
-import { SafeAreaView, StyleSheet } from 'react-native';
-import ToDoList from './ToDoList';
-import ToDoForm from './ToDoForm';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+import MainLayout from './layouts/MainLayout';
+import HomeScreen from './screens/HomeScreen';
+import AboutScreen from './screens/AboutScreen';
+import ToDoList from './components/ToDoList';
+import ToDoForm from './components/ToDoForm';
+
+const Stack = createStackNavigator();
 
 function App() {
   // Initialize the tasks state with your initial list of tasks
   const [tasks, setTasks] = useState([
     'Do laundry',
-    'Go to gym',
-    'Walk dog',
+    'Go to the gym',
+    'Walk the dog',
   ]);
 
   // Function to add new tasks
@@ -17,19 +23,21 @@ function App() {
   };
 
   return (
-    <SafeAreaView style={styles.container}>
-      <ToDoList tasks={tasks} />
-      <ToDoForm addTask={addTask} />
-    </SafeAreaView>
+    <NavigationContainer>
+      <Stack.Navigator initialRouteName="Home">
+        <Stack.Screen name="Home" component={HomeScreen} />
+        <Stack.Screen name="About" component={AboutScreen} />
+        <Stack.Screen name="ToDoList" component={ToDoList} />
+        <Stack.Screen name="ToDoForm">
+          {(props) => (
+            <MainLayout>
+              <ToDoForm {...props} addTask={addTask} />
+            </MainLayout>
+          )}
+        </Stack.Screen>
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    borderWidth: 1,  // Add a border to the entire app
-    paddingTop: 50,   // Add 50px padding from the top
-  },
-});
 
 export default App;
